@@ -7,9 +7,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
  * Online Notes Publishing Application using Java Spring Framework, MongoDb,  and Angular Js on Frontend
  * Author : Wembo Otepa Mulumba
- * Company : Webgestus Systems LLC
+ * Company : ABWEB Systems LLC
 
  */
+
+// MODEL
 @Document(collection="Book")
 public class Book   {
 
