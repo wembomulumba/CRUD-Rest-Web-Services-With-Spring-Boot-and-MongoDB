@@ -16,12 +16,11 @@ import java.util.List;
 
 public interface BookRepository extends MongoRepository<Book, Integer> {
 
-
+   // find the Book by author name repo
     @Query(value = "{authorName:?0}")
     List<Book> findByAuthorName(String authorName);
-
+    // find the Book by book name repo
     @Query(value = "{bookName:?0}")
     List<Book> findByBookName(String bookName);
-
 
 }
